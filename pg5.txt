@@ -1,34 +1,30 @@
-<?xml version = "1.0" encoding = "utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml">
-<head> <title>JavaScript - Grow and Shrink Text </title>
-<script type="text/javascript">
-var c = 0, t1;
-function start()
-{ t1 = window.setInterval("incr()", 100);
-}
-function incr()
-{ c = c + 1;
-t.innerHTML = "TEXT-GROWING : " + c + "pt";
-t.style.fontSize = c + "pt";
-//window.status = c;
-if (c > 50)
-{ window.clearTimeout(t1);
-alert("Font Size Reached 50pt. Text will Now Shrink");
-t1 = window.setInterval("decr()", 100); }
-t.style.color = "red";
-}
-function decr()
-{ c = c - 1;
-t.innerHTML = "TEXT-SHRINKING: " + c + "pt";
-t.style.fontSize = c + "pt";
-//window.status = c;
-if (c == 5)
-{ window.clearTimeout(t1); }
-t.style.color = "blue"; }
-</script> </head>
-<body bgcolor="#ffdead" onload="start()">
-<center> <p id="t"> </p> </center>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grow and Shrink Text</title>
+    <script type="text/javascript">
+      let c = 5,
+        t1,
+        growing = true;
+      function animate() {
+        const el = document.getElementById("t");
+        el.innerHTML =
+          (growing ? "TEXT-GROWING : " : "TEXT-SHRINKING: ") + c + "pt";
+        el.style.fontSize = c + "pt";
+        el.style.color = growing ? "red" : "blue";
+        c += growing ? 1 : -1;
+        if (c > 50) {
+          growing = false;
+          alert("Font Size Reached 50pt. Text will Now Shrink");
+        }
+        if (c === 5 && !growing) clearInterval(t1);
+      }
+      window.onload = () => {
+        t1 = setInterval(animate, 100);
+      };
+    </script>
+  </head>
+  <body bgcolor="#ffdead">
+    <center><p id="t"></p></center>
+  </body>
 </html>
