@@ -1,101 +1,86 @@
-<?xml version = "1.0" encoding = "utf-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml">
-<head>
-<title> Lab program 1 </title>
-<link rel="stylesheet" type="text/css" href="mystyle.css" />
-</head>
-<body>
-<h1> To Display a Table </h1>
-<table border=”border”>
-<caption> Fruit Juice Drink </caption>
-<tr>
-<td rowspan=”2”></td>
-<thcolspan=”3”>Fruit Drinks </th>
-</tr>
-<tr>
-<th> Apple </th>
-<th> Orange</th>
-<th> Screwdriver</th>
-</tr>
-<tr>
-<th> Breakfast </th>
-<td> 0 </td>
-<td> 1 </td>
-<td> 1 </td>
-</tr>
-<tr>
-<th> Lunch </th>
-<td>1 </td>
-<td> 0 </td>
-<td> 0 </td>
-</tr>
-<tr>
-<th> Dinner</th>
-<td> 0 </td>
-<td>1 </td>
-<td> 0 </td>
-</tr>
-</table>
-<h1> To Display an Image </h1>
-<img src=”apple.jpg” alt=”Picture of Apple”/>
-<br/>
-<h1> To Exhibit Hyperlink </h1>
-<a href=”program.html”> Click here </a>
-<br />
-<br />
-<h1> Unordered List </h1>
-<ul>
-<li> Apple </li>
-<li> Orange </li>
-<li> Banana </li>
-</ul>
-<h1> Ordered List </h1>
-<ol>
-<li> Benz </li>
-<li> Toyota </li>
-<li>Tata </li>
-</ol>
-<h1> Definition List </h1>
-<dl>
-<dt> 101 </dt>
-<dd>Deepika</dd>
-<dt> 201 </dt>
-<dd>Kareena</dd>
-<dt> 301 </dt>
-<dd> Katrina</dd>
-</dd>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Program 1</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+  </head>
+  <body>
+    <h1>To Display a Table</h1>
+    <table border="border">
+      <caption>
+        Fruit Juice Drink
+      </caption>
+      <tr>
+        <td rowspan="2">Routine</td>
+        <th colspan="3">Fruit Drinks</th>
+      </tr>
+      <tr>
+        <th>Apple</th>
+        <th>ScrewDriver</th>
+        <th>Orange</th>
+      </tr>
+      <tr>
+        <th>BreakFast</th>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Lunch</th>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Dinner</th>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+    </table>
+    <h1>To show Hyperlink</h1>
+    <a href="https://www.google.com">click here</a>
+    <br />
+    <br />
+    <h1>Unordered List</h1>
+    <ul>
+      <li>Apple</li>
+      <li>Apple</li>
+      <li>Apple</li>
+    </ul>
+
+    <h1>Ordered List</h1>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <h1>Defination list</h1>
+    <dl>
+      <dd>101</dd>
+      <dh>Arpit</dh>
+      <dd>102</dd>
+      <dh>Khushi</dh>
+      <dd>101</dd>
+      <dh>Agrawal</dh>
+    </dl>
+  </body>
 </html>
 
-//style.css
+body {
+    background-color: rgb(200, 255, 205);
+}
+td {
+    padding: 0.5cm;
+}
 
-p,table,li,
-{
-font-family: "lucida calligraphy", arial, 'sans serif';
-margin-left: 10pt;
-}
-p { word-spacing:5px; }
-body { background-color:rgb(200,255,205); }
-p,li,td { font-size:75%;}
-td { padding:0.5cm; }
 th {
-text-align:center;
-font-size:85%;
+    text-align: center;
 }
-h1,h2,hr {color: #483d8b;}
-table
-{
-border-style:outset;
-background-color: rgb(100,255,105);
-}
-li {list-style-type:lower-roman;}
-span
-{
-color:blue;
-background-color:pink;
-font-size:29pt;
-font-style:italic;
-font-weight:bold;
+
+table {
+    background-color: rgb(100, 255, 105);
 }
